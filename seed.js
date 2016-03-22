@@ -23,8 +23,10 @@ var user1 = new User({
 })
 
 user1.save(function(err){
+  console.log(user1.username+ ' saved')
   if (err) {throw err};
-})
+});
+
 
 var user2 = new User({
   username: 'Neo',
@@ -34,8 +36,9 @@ var user2 = new User({
 });
 
 user2.save(function(err){
+  console.log(user2.username+ ' saved')
   if (err) {throw err};
-})
+});
 
 var user3 = new User ({
   username: 'Kurt',
@@ -45,5 +48,7 @@ var user3 = new User ({
 })
 
 user3.save(function(err){
+  console.log(user3.username+ ' saved')
   if (err) {throw err};
-})
+});
+  
